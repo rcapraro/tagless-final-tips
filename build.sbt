@@ -8,9 +8,9 @@ lazy val root = (project in file("."))
   .settings(
     name := "tagless-final-tips",
     libraryDependencies ++= Seq(
-      "tf.tofu" %% "tofu-kernel" % "0.11.1",
-      "tf.tofu" %% "tofu-core-ce3" % "0.11.1",
-      "org.typelevel" %% "cats-effect" % "3.4.5",
-      "org.typelevel" %% "cats-mtl" % "1.3.0",
+      "tf.tofu"       %% "tofu-kernel"   % "0.11.1",
+      "tf.tofu"       %% "tofu-core-ce3" % "0.11.1",
+      "org.typelevel" %% "cats-effect"   % "3.4.5",
+      "org.typelevel" %% "cats-mtl"      % "1.3.0"
     )
   )

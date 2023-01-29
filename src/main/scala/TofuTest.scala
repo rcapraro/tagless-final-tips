@@ -15,7 +15,7 @@ object TofuTest extends IOApp.Simple {
   override def run: IO[Unit] = {
     divide[F]("10", "0").value
       .map {
-        case Left(e)  => IO.println(s"Error $e")
+        case Left(e)      => IO.println(s"Error $e")
         case Right(value) => IO.println(s"Success $value")
       }
       .unsafeRunSync()
